@@ -1,0 +1,112 @@
+[
+    {
+        "name": "哥斯大黎加 戴歐尼修斯 厭氧日曬 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/01.jpg",
+        "price": [400, 780, 1260],
+        "specification": ["100克", "200克", "300克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "巴拿馬 巨石莊園 藝伎 水洗 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/02.jpg",
+        "price": [500, 980, 1460],
+        "specification": ["100克", "200克", "300克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "哥倫比亞 聖荷西莊園 蘭姆酒桶 日曬 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/03.jpg",
+        "price": [700, 1480, 2160],
+        "specification": ["100克", "200克", "300克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "衣索比亞 班莎 花魁 厭氧水洗 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/04.jpg",
+        "price": [400, 780, 1260],
+        "specification": ["100克", "200克", "300克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "瓜地馬拉 法漢尼斯 小王子 水洗 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/05.jpg",
+        "price": [445, 970],
+        "specification": ["100克", "200克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "衣索比亞 潔蒂普 G1 慢速乾燥水洗 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/06.jpg",
+        "price": [430, 820, 1260],
+        "specification": ["100克", "200克", "300克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "衣索比亞 古吉 水仙 日曬處理法 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/07.jpg",
+        "price": [350, 680],
+        "specification": ["100克", "200克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "耶加雪菲 雪列圖 山梨花 甜美日曬 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/08.jpg",
+        "price": [410, 800, 1190],
+        "specification": ["100克", "200克", "300克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "宏都拉斯 紫晶 特殊日曬 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/09.jpg",
+        "price": [430, 820, 1260],
+        "specification": ["100克", "200克", "300克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "巴西 河流之丘 厭氧黑蜜處理 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/10.jpg",
+        "price": [470, 900, 1420],
+        "specification": ["100克", "200克", "300克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    },
+    {
+        "name": "新世界 日曬 • 單品咖啡豆",
+        "category": "beans",
+        "imgUrl": "beans/11.jpg",
+        "price": [410, 800, 1190],
+        "specification": ["100克", "200克", "300克"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""
+    }
+]
