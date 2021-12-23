@@ -3,10 +3,11 @@ const app = express();
 const monogoose = require('mongoose');
 const config = require('./.env.json');
 const productRouter = require("./routers/products");
-
+const path = require('path');
+app.use(express.static(path.join(__dirname, "images")))
 app.use("/products", productRouter);
 
 app.listen(config.server.port, async () => {
-    await monogoose.connect(config.db.url);
-    console.log("Server Start");
+    await monogoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`);
+    console.log("Server Start at", config.server.port);
 });
