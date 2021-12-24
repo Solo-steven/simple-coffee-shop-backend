@@ -3,7 +3,9 @@ const productModel = require('../model/product');
 const config = require('../.env.json');
 
 router.get('/', async (req, res) => {
-    const products = await productModel.find();
+    const { category } = req.query;
+    if(!category) return res.status(401).json({"error": "lack of paramemters"});
+    const products = await productModel.find({ category: category});
     for(const product of products) {
         product.imgUrl =  `http://${config.server.host}:${config.server.port}/${product.imgUrl}`
     }

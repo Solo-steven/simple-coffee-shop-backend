@@ -108,5 +108,75 @@
         "payway": ["超商付款","轉帳付款","貨到付款"],
         "deliverWay": ["門市取貨","超商取貨","宅配付款"],
         "description": ""
+    },
+    {
+        "name": "草莓黑森林蛋糕",
+        "category": "cakes",
+        "imgUrl": "cakes/01.jpg",
+        "price": [200, 380],
+        "specification": ["4入", "8入"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "巴諾克乳酪蛋糕",
+        "category": "cakes",
+        "imgUrl": "cakes/02.jpg",
+        "price": [400, 750],
+        "specification": ["8吋", "12吋"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "芒果水果蛋糕",
+        "category": "cakes",
+        "imgUrl": "cakes/03.jpeg",
+        "price": [400, 750],
+        "specification": ["8吋", "12吋"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "櫻桃巧克力蛋糕",
+        "category": "cakes",
+        "imgUrl": "cakes/04.jpeg",
+        "price": [400, 750, 1000],
+        "specification": ["8吋", "12吋", "14吋"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "糖霜肉桂巧克力蛋糕",
+        "category": "cakes",
+        "imgUrl": "cakes/05.jpeg",
+        "price": [400, 750, 1000],
+        "specification": ["8吋", "12吋", "14吋"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "杏仁巧克力蛋糕",
+        "category": "cakes",
+        "imgUrl": "cakes/06.jpeg",
+        "price": [300, 560],
+        "specification": ["8入", "16入"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "玫瑰黑森林蛋糕",
+        "category": "cakes",
+        "imgUrl": "cakes/07.jpg",
+        "price": [400, 750, 1000],
+        "specification": ["8吋", "12吋", "14吋"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
     }
 ]
