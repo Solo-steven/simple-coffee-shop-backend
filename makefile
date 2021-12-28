@@ -13,12 +13,13 @@ start:
 		mongo
 
 reset: 
-	docker exec  -it ${DB_NAME}   mongoimport \
+	docker exec  -it ${DB_NAME} mongoimport \
 		--db=$(DB_SCHEMA) \
 		--collection=products \
 		--drop \
 		--jsonArray /test/products.json
-
+entry:
+	docker exec -it ${DB_NAME} /bin/bash
 
 clean: 
 	docker stop ${DB_NAME}

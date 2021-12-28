@@ -1,16 +1,14 @@
 const  mongoose = require('mongoose');
 
 const order = new mongoose.Schema({
-    id: String,
     payWay: String,
-    divierWay: String,
-    email: String,
+    deliverWay: String,
     list: [
         {
-        name: String,
-        number: [Number],
-        category: [String],
-        total: Number 
+          name: String,
+          number: Number,
+          specification: String,
+          total: Number
         }
     ],
     buyer: {
@@ -25,4 +23,4 @@ const order = new mongoose.Schema({
     }
 });
 
-module.exports = model("orders", order);
+module.exports = mongoose.model("orders", order);
