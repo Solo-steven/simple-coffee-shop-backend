@@ -17,6 +17,11 @@ const orderRouter  = require("./routers/order");
 app.use("/products", productRouter);
 app.use("/orders", orderRouter);
 
+const swaggerDoc = require("swagger-jsdoc");
+const openAPIDoc = swaggerDoc(config.openapi)
+const swaggerServer = require("swagger-ui-express");
+app.use("/doc", swaggerServer.serve, swaggerServer.setup(openAPIDoc));
+
 app.listen(config.server.port, async () => {
     await monogoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`);
     console.log("Server Start at", config.server.port);
