@@ -12,12 +12,20 @@ start:
 		--name ${DB_NAME} \
 		mongo
 
-reset: 
+reset-products:
 	docker exec  -it ${DB_NAME} mongoimport \
 		--db=$(DB_SCHEMA) \
 		--collection=products \
 		--drop \
 		--jsonArray /test/products.json
+reset-orders:
+	docker exec  -it ${DB_NAME} mongoimport \
+		--db=$(DB_SCHEMA) \
+		--collection=orders \
+		--drop \
+		--jsonArray /test/orders.json
+reset:  reset-products
+
 entry:
 	docker exec -it ${DB_NAME} /bin/bash
 

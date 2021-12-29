@@ -8,7 +8,6 @@ const order = new mongoose.Schema({
           name: String,
           number: Number,
           specification: String,
-          total: Number
         }
     ],
     buyer: {

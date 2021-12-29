@@ -178,5 +178,75 @@
         "payway": ["超商付款","轉帳付款","貨到付款"],
         "deliverWay": ["門市取貨","超商取貨","宅配付款"],
         "description": ""   
+    },
+    {
+        "name": "燕麥消化餅乾",
+        "category": "cookies",
+        "imgUrl": "cookies/01.jpg",
+        "price": [200, 380],
+        "specification": ["8入", "16入"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "溏心麥芽餅乾",
+        "category": "cookies",
+        "imgUrl": "cookies/02.jpg",
+        "price": [200, 380],
+        "specification": ["8入", "16入"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "草莓巧克力餅乾",
+        "category": "cookies",
+        "imgUrl": "cookies/03.jpg",
+        "price": [200, 380],
+        "specification": ["8入", "16入"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "雜糧消化餅乾",
+        "category": "cookies",
+        "imgUrl": "cookies/04.jpg",
+        "price": [200, 380],
+        "specification": ["8入", "16入"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "家庭餅乾盒",
+        "category": "cookies",
+        "imgUrl": "cookies/05.jpg",
+        "price": [400],
+        "specification": ["20入"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "焦糖杏仁瓦片",
+        "category": "cookies",
+        "imgUrl": "cookies/06.jpg",
+        "price": [200, 380],
+        "specification": ["8入", "16入"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
+    },
+    {
+        "name": "巧克力豆曲奇",
+        "category": "cookies",
+        "imgUrl": "cookies/07.jpg",
+        "price": [200, 380],
+        "specification": ["8入", "16入"],
+        "payway": ["超商付款","轉帳付款","貨到付款"],
+        "deliverWay": ["門市取貨","超商取貨","宅配付款"],
+        "description": ""   
     }
 ]
