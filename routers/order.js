@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const orderModel  = require('../model/order');
+const orderModel = require('../model/order');
 const productModel = require('../model/product');
 const config = require('../.env.json');
 
@@ -13,7 +13,7 @@ const config = require('../.env.json');
  *        parameters:
  *          - in: query
  *            name: id
- *            schema: 
+ *            schema:
  *              type: string
  *        responses:
  *            200:
@@ -36,18 +36,18 @@ const config = require('../.env.json');
  *                         type: array
  *                         items:
  *                           type: object
- *                           properties: 
+ *                           properties:
  *                              name:
  *                                type: string
  *                              number:
- *                                type: number   
+ *                                type: number
  *                              specification:
  *                                type: string
  *                              price:
  *                                type: number
  *                              imgUrl:
  *                                type: string
- *  
+ *
  *                      buyer:
  *                         description: infomation of buyer.
  *                         type: object
@@ -67,39 +67,41 @@ const config = require('../.env.json');
  *                           phone:
  *                             type: string
  *                           email:
- *                             type: string       
+ *                             type: string
  */
 
-router.get("/", async function (req, res) {
-    const { id } = req.query;
-    if(!id) return res.status(400).json();
-    try{
-        const data = await orderModel.findById(id);
-        const order = {
-            payWay: data.payWay,
-            deliverWay: data.deliverWay,
-            buyer: data.buyer,
-            reciver: data.reciver,
-            id: data._id,
-            list: []
-        }
-        for(const item of data.list) {
-            const products = await productModel.find({ name: item.name });
-            const product = products[0];
+router.get('/', async (req, res) => {
+  const { id } = req.query;
+  if (!id) return res.status(400).json();
+  try {
+    const data = await orderModel.findById(id);
+    const order = {
+      payWay: data.payWay,
+      deliverWay: data.deliverWay,
+      buyer: data.buyer,
+      reciver: data.reciver,
+      id: data._id,
+      list: [],
+    };
+    // eslint-disable-next-line no-restricted-syntax
+    for (const item of data.list) {
+      // eslint-disable-next-line no-await-in-loop
+      const products = await productModel.find({ name: item.name });
+      const product = products[0];
 
-            order.list.push({
-                specification: item.specification,
-                number: item.number,
-                name: item.name,
-                imgUrl:  `http://${config.server.host}:${config.server.port}/${product.imgUrl}`,
-                price: product.price[ product.specification.indexOf(item.specification) ]
-            })
-        }
-        return res.status(200).json(order);
-    }catch(err) {
-        return res.status(404).json();
+      order.list.push({
+        specification: item.specification,
+        number: item.number,
+        name: item.name,
+        imgUrl: `http://${config.server.host}:${config.server.port}/${product.imgUrl}`,
+        price: product.price[product.specification.indexOf(item.specification)],
+      });
     }
-})
+    return res.status(200).json(order);
+  } catch (err) {
+    return res.status(404).json();
+  }
+});
 
 /**
  * @swagger
@@ -122,7 +124,7 @@ router.get("/", async function (req, res) {
  *                  type: string
  *                list:
  *                  description: cart of this order
- *                  type: array 
+ *                  type: array
  *                  items:
  *                    type: object
  *                    properties:
@@ -151,20 +153,19 @@ router.get("/", async function (req, res) {
  *                     phone:
  *                       type: string
  *                     email:
- *                       type: string                        
+ *                       type: string
  */
-router.post("/", async function (req, res) {
-    const { payWay, deliverWay, list, buyer, reciver  } = req.body.data;
-    console.log(req.body.data);
-    if(!payWay || !deliverWay || !list || !buyer || !reciver) 
-        return res.status(400).json({});
-    if(list.length  == 0 )
-        return res.status(400).json({});
-    const order = new orderModel({
-        payWay, deliverWay, list, buyer, reciver
-    });
-    order.save();
-    return res.status(200).json({ id: order._id });
+router.post('/', async (req, res) => {
+  const {
+    payWay, deliverWay, list, buyer, reciver,
+  } = req.body.data;
+  if (!payWay || !deliverWay || !list || !buyer || !reciver) { return res.status(400).json({}); }
+  if (list.length === 0) { return res.status(400).json({}); }
+  const order = new orderModel({
+    payWay, deliverWay, list, buyer, reciver,
+  });
+  order.save();
+  return res.status(200).json({ id: order._id });
 });
 
-module.exports = router ;
+module.exports = router;
